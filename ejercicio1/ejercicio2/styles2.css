@@ -1,0 +1,124 @@
+:root {
+  --primary: #10b981;
+  --primary-hover: #059669;
+  --bg-gradient: linear-gradient(135deg, #d1fae5 0%, #ecfdf5 100%);
+  --card-bg: #ffffff;
+  --text-main: #0f172a;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--bg-gradient);
+  padding: 20px;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 2.2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.15);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+h2 {
+  color: var(--text-main);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+input {
+  padding: 0.75rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+button {
+  padding: 0.85rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-top: 5px;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background: var(--primary-hover);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+/* Tabla Estilizada */
+#contenedorTabla {
+  max-height: 280px;
+  overflow-y: auto;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+th {
+  background: #f8fafc;
+  color: #334155;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 12px;
+  position: sticky;
+  top: 0;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+td {
+  padding: 10px;
+  font-size: 0.95rem;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+tr:nth-child(even) { background: #f8fafc; }
+tr:hover { background: #f1f5f9; }
+
+.error-msg {
+  color: #ef4444;
+  font-weight: 600;
+  padding: 10px;
+}

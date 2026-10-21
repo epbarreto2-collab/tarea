@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f6f9;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+}
+
+.card h2 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #7f8c8d;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #3498db;
+}
+
+button {
+  padding: 0.75rem 1.25rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.resultado {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.8rem;
+  border-radius: 6px;
+  display: none;
+}
+
+/* Colores según el resultado */
+.resultado.excelente { background-color: #d4edda; color: #155724; display: block; }
+.resultado.aprobado { background-color: #d1ecf1; color: #0c5460; display: block; }
+.resultado.recuperacion { background-color: #fff3cd; color: #856404; display: block; }
+.resultado.reprobado { background-color: #f8d7da; color: #721c24; display: block; }
+.resultado.error { background-color: #e2e3e5; color: #383d41; display: block; }
